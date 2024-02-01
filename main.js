@@ -30,5 +30,12 @@ app.listen(PORT,() => {
     console.log("server start on port 4000");
 });
 
+const paswordreset=require("./user/routes/resetpw");
+const route=require("./user/routes/userRouter")
+
+
+
+app.use('/',cors(corsOptions),paswordreset);
+app.use('/',cors(corsOptions),userroute);
 
 
