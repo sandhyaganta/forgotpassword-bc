@@ -19,3 +19,4 @@ router.post("/password-reset",sendemail,cors(corsoptions),async(req,res) => {
         console.log(error);
     }
 } );
+module.exports=router

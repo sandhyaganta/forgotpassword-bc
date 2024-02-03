@@ -7,15 +7,15 @@ const sendmail = async(req,res,next) => {
         service: "gmail",
 
         auth:{
-            user:"srikanthyaswada.vita@gmail.com",
-            pass:"txtz vsgp qjug axxe",
+            user:"gantasandhyavitasoft@gmail.com",
+            pass:"fbkh uzzr zxij ywuv",
         },
     });
     let emaildata={
-        from:"srikanthyaswada.vita@gmail.com",
+        from:"gantasandhyavitasoft@gmail.com",
         to: email,
         subject:"password reset",
-        Text:"http://localhost:4200/reset",
+        text:"www.google.com",
     }
     transporter.sendMail(emaildata,async(err,data) => {
         if(err){
@@ -26,3 +26,4 @@ const sendmail = async(req,res,next) => {
         }
     })
 }
+module.exports=sendmail

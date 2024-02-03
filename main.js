@@ -31,7 +31,7 @@ app.listen(PORT,() => {
 });
 
 const paswordreset=require("./user/routes/resetpw");
-const route=require("./user/routes/userRouter")
+const userroute=require("./user/routes/userRouter")
 
 
 
